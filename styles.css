@@ -1,12 +1,21 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+   
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'roboto' , sans-serif;
     margin: 0%;
 }
 
-*{
-    box-sizing: border-box;
-}
 
 html{
     scroll-behavior: smooth;
@@ -56,9 +65,9 @@ header .logo{
 }
 
 header .conteiner{
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header nav{
@@ -182,15 +191,7 @@ header a:hover{
 
 }
 
-#huerta-organica .conteiner{
-    text-align: center;
-    padding: 200px 12px;
-    font-weight: bold;
-}
 
-#huerta-organica li{
-    margin: 15px 0px;
-}
 
 footer{
     background-color:rgb(230,230,230);
@@ -209,91 +210,175 @@ footer .conteiner{
     align-items: flex-end;
 }
 
-@media (min-width: 720px){
-    header{
-        position: fixed;
+
+
+    /* SECCION CONTACTO */
+    .contacto{
+        background-image: url(imagenesexp/contact_bg.png);
+        background-color: #1e2326;
+        color: #fff;
+        padding: 50px 0;
+    }
+    .contacto .contenido-seccion{
+        max-width: 1400px;
+        
+        margin: auto;
+    }
+    .contacto h2{
+        font-size: 48px;
+        font-family: 'Righteous';
+        text-align: center;
+        padding: 20px 0;
+    }
+    .contacto .fila{
+        display: flex;
+    }
+    .contacto .col{
+        width: 50%;
+        padding: 10px;
+        position: relative;
+    }
+    .contacto .col input, .contacto .col textarea{
+        display: block;
+        width: 100%;
+        padding: 18px;
+        border: none;
+        margin-bottom: 20px;
+        background-color: #252A2E;
+        color: #fff;
+        font-size: 18px;
+    }
+    .contacto button{
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid #fff;
+        width: fit-content;
+        display: block;
+        margin: 20px auto;
+        padding: 10px 22px;
+        font-size: 16px;
+        color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+    .contacto button .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #1CB698;
+        z-index: -1;
+        transition: 1s;
+    }
+    .contacto button:hover .overlay{
         width: 100%;
     }
-
-    header .conteiner{
-        flex-direction: row;
-        justify-content: space-between;
+    .contacto .col img{
+        width: 100%;
+    }
+    .contacto .col .info{
+        position: absolute;
+        top: 40%;
+        background-color: #252A2E;
+        padding: 20px;
+        max-width: 350px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .contacto .col .info ul{
+        list-style: none;
+    }
+    .contacto .col .info ul li{
+        margin-bottom: 20px;
+    }
+    .contacto .col .info ul li i{
+        color: #1CB698;
+        display: inline-block;
+        margin-right: 20px;
     }
 
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
-    #somos-expe .conteiner{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #somos-expe aside{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 50px;
-        padding: 0px 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #somos-expe h2{
-        margin-top: 0px;
-    }
-
-    #somos-expe .img-conteiner{
-        background-image: 
-        url('imagenesexp/mili1.jpg');
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 400px;
-        }
-
-    #nuestros-productos .productos{
-        display: flex;
-        justify-content: center;
-    }
-
-    #nuestros-productos p{
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    #nuestros-productos h2{
-        font-size: 4em;
-    }
-
-    #nuestros-productos h3{
-        margin-top: 0;
-    }
-
-    #nuestros-productos .carta{
-        padding: 50px;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    }
-
-    #huerta-organica{
-        
-    }
-
-    #huerta-organica .conteiner{
-        text-align: center;
-    }
-
-    #huerta-organica ul{
-        margin-left: 100px;
-    }
 
     footer .conteiner{
         justify-content: flex-end;
     
     }
+
+    @media (min-width: 720px){
+        header{
+            position: fixed;
+            width: 100%;
+        }
+    
+        header .conteiner{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        header nav{
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+    
+        #somos-expe .conteiner{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    
+        #somos-expe aside{
+            width: 50%;
+            max-width: 600px;
+            text-align: initial;
+            padding-left: 50px;
+            padding: 0px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+        #somos-expe h2{
+            margin-top: 0px;
+        }
+    
+        #somos-expe .img-conteiner{
+            background-image: 
+            url('imagenesexp/mili1.jpg');
+            background-size: cover;
+            background-position: center center;
+            height: 500px;
+            width: 400px;
+            }
+    
+        #nuestros-productos .productos{
+            display: flex;
+            justify-content: center;
+        }
+    
+        #nuestros-productos p{
+            display: block;
+            margin-bottom: 30px;
+        }
+    
+        #nuestros-productos h2{
+            font-size: 4em;
+        }
+    
+        #nuestros-productos h3{
+            margin-top: 0;
+        }
+    
+        #nuestros-productos .carta{
+            padding: 50px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .contacto .fila{
+            display: flex;
+        }
+        .contacto .fila .col{
+            width: 100%;
+        }
 
 
 
