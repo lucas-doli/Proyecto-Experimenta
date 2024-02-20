@@ -323,6 +323,7 @@ footer .conteiner{
         }
     
         #somos-expe .conteiner{
+            margin: auto;
             display: flex;
             justify-content: space-evenly;
         }
