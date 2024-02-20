@@ -382,6 +382,9 @@ footer .conteiner{
         .contacto .fila .col{
             width: 100%;
         }
+        .contacto .col .info{
+            margin: auto;
+        }
 
 
 
