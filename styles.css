@@ -284,7 +284,7 @@ footer .conteiner{
         background-color: #252A2E;
         padding: 20px;
         max-width: 350px;
-        left: 50%;
+        left: auto;
         transform: translate(-50%, -50%);
     }
     .contacto .col .info ul{
@@ -382,8 +382,9 @@ footer .conteiner{
         .contacto .fila .col{
             width: 100%;
         }
-        .contacto .col .info{
-            margin: auto;
+        .contacto .col .info ul li i{
+            width: 100%;
+            left: auto;
         }
 
 
