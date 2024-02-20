@@ -353,6 +353,7 @@ footer .conteiner{
             }
     
         #nuestros-productos .productos{
+            margin: auto;
             display: flex;
             justify-content: center;
         }
