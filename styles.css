@@ -1,62 +1,78 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-*{
+* {
     box-sizing: border-box;
-   
+
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: 'roboto' , sans-serif;
+body {
+    font-family: 'roboto', sans-serif;
     margin: 0%;
 }
 
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-h1{ font-size: 3.5em;}
-h2{ font-size: 2.7em;}
-h3{ font-size: 2em;}
-p{ font-size: 1.25em;}
-ul{ list-style: none;}
-li{font-size: 1.25em;}
+h1 {
+    font-size: 3.5em;
+}
 
-button{
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
     font-size: 1.5em;
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(0,0,0,0.5);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     color: white;
     background-color: rgb(33, 136, 33);
 }
 
-button:hover{
+button:hover {
     background-color: rgb(80, 201, 80);
 }
 
-.conteiner{
+.conteiner {
     max-width: 1400px;
     margin: auto;
 }
 
-.color-acento{
+.color-acento {
     color: rgb(33, 136, 33);
 }
 
-header{
-    background-color: rgb(245,245,245)
+header {
+    background-color: rgb(245, 245, 245)
 }
 
-header .logo{
+header .logo {
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
@@ -64,31 +80,31 @@ header .logo{
     font-size: 1.6em;
 }
 
-header .conteiner{
+header .conteiner {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-header nav{
+header nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding-bottom: 25px; 
+    padding-bottom: 25px;
 }
 
-header a{
+header a {
     padding: 5px 12px;
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-header a:hover{
+header a:hover {
     color: rgb(33, 136, 33);
 }
 
-#hero{
+#hero {
     margin: auto;
     display: flex;
     align-items: center;
@@ -97,46 +113,45 @@ header a:hover{
     flex-direction: column;
     height: 90vh;
     color: white;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ) 
-    ,url(imagenesexp/fondo22.jpg);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(imagenesexp/fondo22.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-#hero h1{
+#hero h1 {
     color: white;
 }
 
-#somos-expe .conteiner{
+/* SECCIÓN SOBRE NOSOTROS */
+
+#somos-expe .conteiner {
     text-align: center;
     padding: 200px 12px;
 }
 
-#nuestros-productos{
-    background-color: rgb(30,30,30);
+#nuestros-productos {
+    background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
 }
 
-#nuestros-productos .conteiner{
+#nuestros-productos .conteiner {
     padding: 150px 12px;
 }
 
-#nuestros-productos h2{
+#nuestros-productos h2 {
     margin-top: 0;
     font-size: 3.2em;
 }
 
-#nuestros-productos p{
+#nuestros-productos p {
     display: none;
 }
 
-#nuestros-productos .carta{
+#nuestros-productos .carta {
     background-position: center center;
     background-size: cover;
     padding: 50px 6px;
@@ -144,250 +159,250 @@ header a:hover{
     border-radius: 15px;
 }
 
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(imagenesexp/armatucaja3.jpg)
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(imagenesexp/armatucaja3.jpg)
 }
 
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(imagenesexp/chiagral.jpg)
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(imagenesexp/chiagral.jpg)
 }
 
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(imagenesexp/sirius.jpg)
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(imagenesexp/sirius.jpg)
 }
 
-#recetas{
+/* SECCIÓN DE RECETAS */
+
+#recetas {
     text-align: center;
     color: white;
     font-weight: bold;
     padding: 200px 12px;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url(imagenesexp/pancake.jpg);
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(imagenesexp/pancake.jpg);
     background-position: center;
     background-size: cover;
 }
 
-#recetas button{
+#recetas button {
     font-size: 1.75em;
     margin: 20px;
 
 }
 
+/* SECCION FOOTER */
 
-
-footer{
-    background-color:rgb(230,230,230);
+footer {
+    background-color: rgb(230, 230, 230);
 }
 
-footer p{
+footer p {
     margin: 0;
     padding: 12px;
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
 }
 
-footer .conteiner{
+footer .conteiner {
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
+/* SECCION CONTACTO */
 
-
-    /* SECCION CONTACTO */
-    .contacto{
-        background-image: url(imagenesexp/contact_bg.png);
-        background-color: #1e2326;
-        color: #fff;
-        padding: 50px 0;
-    }
-    .contacto .contenido-seccion{
-        max-width: 1400px;
-        
-        margin: auto;
-    }
-    .contacto h2{
-        font-size: 48px;
-        font-family: 'Righteous';
-        text-align: center;
-        padding: 20px 0;
-    }
-    .contacto .fila{
-        display: flex;
-    }
-    .contacto .col{
-        width: 50%;
-        padding: 10px;
-        position: relative;
-    }
-    .contacto .col input, .contacto .col textarea{
-        display: block;
-        width: 100%;
-        padding: 18px;
-        border: none;
-        margin-bottom: 20px;
-        background-color: #252A2E;
-        color: #fff;
-        font-size: 18px;
-    }
-    .contacto button{
-        cursor: pointer;
-        background-color: transparent;
-        border: 2px solid #fff;
-        width: fit-content;
-        display: block;
-        margin: 20px auto;
-        padding: 10px 22px;
-        font-size: 16px;
-        color: #fff;
-        position: relative;
-        z-index: 10;
-    }
-    .contacto button .overlay{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 100%;
-        background-color: #1CB698;
-        z-index: -1;
-        transition: 1s;
-    }
-    .contacto button:hover .overlay{
-        width: 100%;
-    }
-    .contacto .col img{
-        width: 100%;
-    }
-    .contacto .col .info{
-        position: absolute;
-        top: 40%;
-        background-color: #252A2E;
-        padding: 20px;
-        max-width: 350px;
-        left: auto;
-        transform: translate(-50%, -50%);
-    }
-    .contacto .col .info ul{
-        list-style: none;
-    }
-    .contacto .col .info ul li{
-        margin-bottom: 20px;
-    }
-    .contacto .col .info ul li i{
-        color: #1CB698;
-        display: inline-block;
-        margin-right: 20px;
-    }
-
-
-    footer .conteiner{
-        justify-content: flex-end;
-    
-    }
-
-    @media (min-width: 720px){
-        header{
-            position: fixed;
-            width: 100%;
-        }
-    
-        header .conteiner{
-            flex-direction: row;
-            justify-content: space-between;
-        }
-    
-        header nav{
-            flex-direction: row;
-            padding-bottom: 0;
-            padding-right: 20px;
-        }
-    
-        #somos-expe .conteiner{
-            margin: auto;
-            display: flex;
-            justify-content: space-evenly;
-        }
-    
-        #somos-expe aside{
-            width: 50%;
-            max-width: 600px;
-            text-align: initial;
-            padding-left: 50px;
-            padding: 0px 30px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-    
-        #somos-expe h2{
-            margin-top: 0px;
-        }
-    
-        #somos-expe .img-conteiner{
-            background-image: 
-            url('imagenesexp/mili1.jpg');
-            background-size: cover;
-            background-position: center center;
-            height: 500px;
-            width: 400px;
-            }
-    
-        #nuestros-productos .productos{
-            margin: auto;
-            display: flex;
-            justify-content: center;
-        }
-    
-        #nuestros-productos p{
-            display: block;
-            margin-bottom: 30px;
-        }
-    
-        #nuestros-productos h2{
-            font-size: 4em;
-        }
-    
-        #nuestros-productos h3{
-            margin-top: 0;
-        }
-    
-        #nuestros-productos .carta{
-            padding: 50px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-        }
-
-        .contacto .fila{
-            display: flex;
-        }
-        .contacto .fila .col{
-            width: 100%;
-        }
-        .contacto .col .info ul li i{
-            width: 100%;
-            left: auto;
-        }
-
-
-
+.contacto {
+    background-image: url(imagenesexp/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
 }
 
+.contacto .contenido-seccion {
+    max-width: 1400px;
+
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+.contacto .col img {
+    width: 100%;
+}
+
+.contacto .col .info {
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: auto;
+    transform: translate(-50%, -50%);
+}
+
+.contacto .col .info ul {
+    list-style: none;
+}
+
+.contacto .col .info ul li {
+    margin-bottom: 20px;
+}
+
+.contacto .col .info ul li i {
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer .conteiner {
+    justify-content: flex-end;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .conteiner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #somos-expe .conteiner {
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-expe aside {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 50px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-expe h2 {
+        margin-top: 0px;
+    }
+
+    #somos-expe .img-conteiner {
+        background-image:
+            url('imagenesexp/mili1.jpg');
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-productos .productos {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-productos h2 {
+        font-size: 4em;
+    }
+
+    #nuestros-productos h3 {
+        margin-top: 0;
+    }
+
+    #nuestros-productos .carta {
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .contacto .fila {
+        display: flex;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+
+    .contacto .col .info ul li i {
+        width: 100%;
+        left: auto;
+    }
+
+}
