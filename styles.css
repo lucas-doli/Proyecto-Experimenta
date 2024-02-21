@@ -244,13 +244,13 @@ header a:hover {
 .contacto button {
     cursor: pointer;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid rgb(100, 100, 100);
     width: fit-content;
     display: block;
     margin: 20px auto;
     padding: 10px 22px;
     font-size: 16px;
-    color: #fff;
+    color: rgb(100, 100, 100);
     position: relative;
     z-index: 10;
 }
@@ -277,7 +277,7 @@ header a:hover {
 /* SECCION FOOTER */
 
 footer {
-    background-color: rgb(230, 230, 230);
+    background-color: #252A2E;
 }
 
 footer p {
